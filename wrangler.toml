@@ -1,0 +1,9 @@
+name = "amr-tantawy-law-firm"
+compatibility_date = "2026-10-13"
+pages_build_output_dir = "dist"
+
+[vars]
+ENVIRONMENT = "production"
+APP_NAME = "مكتب أ. عمرو طنطاوي للمحاماة والاستشارات القانونية"
+WHATSAPP_CONTACT = "01003676300"
+COPYRIGHT_HOLDER = "د. هبه سعيد عبدالله"

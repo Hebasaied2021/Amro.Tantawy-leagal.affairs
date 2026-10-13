@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-midnight: #0A0E1A;
+    --card-slate: #131728;
+    --card-slate-elevated: #1A1B2F;
+    --cyber-cyan: #00F0FF;
+    --electric-indigo: #5E5DF0;
+  }
+
+  body {
+    font-family: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0A0E1A;
+    color: #F1F5F9;
+    overflow-x: hidden;
+  }
+
+  .font-en, .font-mono-num {
+    font-family: 'Montserrat', monospace, sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0E1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1A1B2F;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5E5DF0;
+}
+
+/* Glowing effects */
+.glow-cyan-sm {
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.22);
+}
+
+.glow-cyan-md {
+  box-shadow: 0 0 24px rgba(0, 240, 255, 0.28);
+}
+
+.glow-indigo-sm {
+  box-shadow: 0 0 16px rgba(94, 93, 240, 0.28);
+}
+
+.border-cyber {
+  border-color: rgba(0, 240, 255, 0.22);
+}
+
+.border-cyber-subtle {
+  border-color: rgba(94, 93, 240, 0.18);
+}
+
+/* Print styling for PDF export / printing */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
